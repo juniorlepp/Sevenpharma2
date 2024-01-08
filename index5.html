@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+     
+  <div class="loader_bg">
+    <div class="loader"></div>
+</div>
+    <div class="container">
+      <form autocomplete="off">
+        <h4> Formulaire d'inscription au Tourisme médical</h4>
+        <div class="input-section">
+          <label>First Name <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter First Name" 
+            name="First name"
+            id="first-name-input"
+            required
+          />
+        </div>
+        <div class="input-section">
+          <label>Last Name <span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Enter Last Name"
+            name="Last Name"
+            required
+          />
+          
+        </div>
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Enter Email" name="email" required />
+        </div>
+        <div class="input-section">
+          <label>Phone <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            name="phone"
+            required
+          />
+        </div>
+        <button id="submit-button">send the form</button>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="script10.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+  </body>
+</html>
